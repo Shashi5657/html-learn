@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+    <head>
+        <title>SIGNUP-STRAT HAWK</title>
+    </head>
+    <body>
+        <h1>STRAT HAWK</h1>
+        <h2>signup</h2>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Signup</a>
+        <a href="bookings.html">Bookings</a>
+        <a href="destination.html">Destination</a>
+        <form action="login.html">
+            <table cellpadding="10">
+                <tr>
+                    <td>
+                    Title<br>
+                    <input type="radio" name="title" value="mister" id="mister" required>
+                    <label for="mister">Mr.</label>
+                    <input type="radio" name="title" value="missus" id="missus">
+                    <label for="missus">Mrs.</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="FirstName">First Name</label><br>
+                        <input type="text" name="FirstName" id="FirstName" required>
+                    </td>
+                    <td>
+                        <label for="LastName">Last Name</label><br>
+                        <input type="text" name="LastName" id="LastName" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label><br>
+                        <input type="text" name="email" id="email"
+                               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                title="xxxx@yyyy.zzz format" required>
+                    </td>
+                    <td><label for="mobile number">Mobile Num</label><br>
+                        <input type="text" name="mobile number" id="mobile number" pattern="[o-9]{10}" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password</label><br>
+                        <input type="password" name="password" id="password"
+                         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                         title="A number, 1 Uppercase, 1 Lowercase with 8 or more characters"required>
+                    </td>
+                    <td>
+                        <label for="confirm password"> Confirm Password</label><br>
+                        <input type="password" name="confirm password" id="confirm password" required
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                               title="Password must contain 1 number, 1 upper case, 1 lower case and at least 8 or more characters">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="language">preferred language</label><br>
+                        <select name="language" id="language">
+                            <option>English</option>
+                            <option>Hindi</option>
+                            <option>French</option>
+                            <option>Spanish</option>                            
+                        </select>                                
+                    </td>
+                    <td>
+                        <input type="checkbox" name="newsletter" id="newsletter">
+                        <label for="newsletter">recieve newsletter</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="register">
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
